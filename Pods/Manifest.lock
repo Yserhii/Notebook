@@ -1,0 +1,16 @@
+PODS:
+  - yserhii2019 (0.1.0)
+
+DEPENDENCIES:
+  - yserhii2019 (from `lib/`)
+
+EXTERNAL SOURCES:
+  yserhii2019:
+    :path: lib/
+
+SPEC CHECKSUMS:
+  yserhii2019: 7692dfdf5f3cc054bb13eae7c0c92b913ff11dbf
+
+PODFILE CHECKSUM: 249b0867319a990a0c0cfa24329278ac973b8b29
+
+COCOAPODS: 1.7.3

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="day09/Base.lproj/Main.storyboard" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.2.1" build-num="10E1001"/>
+    </header>
+    <body>
+      <trans-unit id="71Q-Md-OEF.normalTitle">
+        <source>Take Picture</source>
+        <target>Take Picture</target>
+        <note>Class = "UIButton"; normalTitle = "Take Picture"; ObjectID = "71Q-Md-OEF";</note>
+      </trans-unit>
+      <trans-unit id="BXn-Yf-73v.title">
+        <source>Save</source>
+        <target>Save</target>
+        <note>Class = "UIBarButtonItem"; title = "Save"; ObjectID = "BXn-Yf-73v";</note>
+      </trans-unit>
+      <trans-unit id="CB1-o2-DCl.text">
+        <source>Modification date</source>
+        <target>Modification date</target>
+        <note>Class = "UILabel"; text = "Modification date"; ObjectID = "CB1-o2-DCl";</note>
+      </trans-unit>
+      <trans-unit id="JU8-UE-OXf.normalTitle">
+        <source>Choose Picture</source>
+        <target>Choose Picture</target>
+        <note>Class = "UIButton"; normalTitle = "Choose Picture"; ObjectID = "JU8-UE-OXf";</note>
+      </trans-unit>
+      <trans-unit id="Keu-pc-v6c.text">
+        <source>Title</source>
+        <target>Title</target>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "Keu-pc-v6c";</note>
+      </trans-unit>
+      <trans-unit id="Mnp-1n-4yr.placeholder">
+        <source>Title</source>
+        <target>Title</target>
+        <note>Class = "UITextField"; placeholder = "Title"; ObjectID = "Mnp-1n-4yr";</note>
+      </trans-unit>
+      <trans-unit id="OcZ-oe-vl8.text">
+        <source>Content</source>
+        <target>Content</target>
+        <note>Class = "UILabel"; text = "Content"; ObjectID = "OcZ-oe-vl8";</note>
+      </trans-unit>
+      <trans-unit id="Qqp-Ee-QF9.text">
+        <source>Creation date</source>
+        <target>Creation date</target>
+        <note>Class = "UILabel"; text = "Creation date"; ObjectID = "Qqp-Ee-QF9";</note>
+      </trans-unit>
+      <trans-unit id="bTC-yh-7Cm.normalTitle">
+        <source>Login With TouchID</source>
+        <target>Login With TouchID</target>
+        <note>Class = "UIButton"; normalTitle = "Login With TouchID"; ObjectID = "bTC-yh-7Cm";</note>
+      </trans-unit>
+      <trans-unit id="oei-cD-fKW.title">
+        <source>Article</source>
+        <target>Article</target>
+        <note>Class = "UINavigationItem"; title = "Article"; ObjectID = "oei-cD-fKW";</note>
+      </trans-unit>
+      <trans-unit id="ukE-4Z-Np8.title">
+        <source>Diary</source>
+        <target>Diary</target>
+        <note>Class = "UINavigationItem"; title = "Diary"; ObjectID = "ukE-4Z-Np8";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="day09/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.2.1" build-num="10E1001"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>day09</source>
+        <target>day09</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSCameraUsageDescription">
+        <source>Give me it</source>
+        <target>Give me it</target>
+        <note>Privacy - Camera Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

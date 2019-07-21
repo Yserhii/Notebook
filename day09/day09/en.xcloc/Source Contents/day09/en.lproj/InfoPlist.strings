@@ -1,0 +1,4 @@
+/* Bundle name */
+"CFBundleName" = "day09";
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "Give me it";

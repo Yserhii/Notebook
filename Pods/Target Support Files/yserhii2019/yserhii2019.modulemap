@@ -1,0 +1,6 @@
+framework module yserhii2019 {
+  umbrella header "yserhii2019-umbrella.h"
+
+  export *
+  module * { export * }
+}

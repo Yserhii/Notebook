@@ -1,0 +1,33 @@
+/* Class = "UIButton"; normalTitle = "Take Picture"; ObjectID = "71Q-Md-OEF"; */
+"71Q-Md-OEF.normalTitle" = "Фотоапарат";
+
+/* Class = "UIButton"; normalTitle = "Login With TouchID"; ObjectID = "bTC-yh-7Cm"; */
+"bTC-yh-7Cm.normalTitle" = "Зайти с TouchID";
+
+/* Class = "UIBarButtonItem"; title = "Save"; ObjectID = "BXn-Yf-73v"; */
+"BXn-Yf-73v.title" = "Сохранить";
+
+/* Class = "UILabel"; text = "Modification date"; ObjectID = "CB1-o2-DCl"; */
+"CB1-o2-DCl.text" = "Дата изменения";
+
+/* Class = "UIButton"; normalTitle = "Choose Picture"; ObjectID = "JU8-UE-OXf"; */
+"JU8-UE-OXf.normalTitle" = "Фотогалерея";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Keu-pc-v6c"; */
+"Keu-pc-v6c.text" = "Заглавие";
+
+/* Class = "UITextField"; placeholder = "Title"; ObjectID = "Mnp-1n-4yr"; */
+"Mnp-1n-4yr.placeholder" = "Заглавие";
+
+/* Class = "UILabel"; text = "Content"; ObjectID = "OcZ-oe-vl8"; */
+"OcZ-oe-vl8.text" = "Контент";
+
+/* Class = "UINavigationItem"; title = "Article"; ObjectID = "oei-cD-fKW"; */
+"oei-cD-fKW.title" = "Новая запись";
+
+/* Class = "UILabel"; text = "Creation date"; ObjectID = "Qqp-Ee-QF9"; */
+"Qqp-Ee-QF9.text" = "Дата создания";
+
+/* Class = "UINavigationItem"; title = "Diary"; ObjectID = "ukE-4Z-Np8"; */
+"ukE-4Z-Np8.title" = "Блокнот";
+

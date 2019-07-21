@@ -1,0 +1,36 @@
+
+/* Class = "UIButton"; normalTitle = "Take Picture"; ObjectID = "71Q-Md-OEF"; */
+"71Q-Md-OEF.normalTitle" = "Take Picture";
+
+/* Class = "UIBarButtonItem"; title = "Save"; ObjectID = "BXn-Yf-73v"; */
+"BXn-Yf-73v.title" = "Save";
+
+/* Class = "UILabel"; text = "Modification date"; ObjectID = "CB1-o2-DCl"; */
+"CB1-o2-DCl.text" = "Modification date";
+
+/* Class = "UIButton"; normalTitle = "Choose Picture"; ObjectID = "JU8-UE-OXf"; */
+"JU8-UE-OXf.normalTitle" = "Choose Picture";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Keu-pc-v6c"; */
+"Keu-pc-v6c.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "Title"; ObjectID = "Mnp-1n-4yr"; */
+"Mnp-1n-4yr.placeholder" = "Title";
+
+/* Class = "UILabel"; text = "Content"; ObjectID = "OcZ-oe-vl8"; */
+"OcZ-oe-vl8.text" = "Content";
+
+/* Class = "UILabel"; text = "Creation date"; ObjectID = "Qqp-Ee-QF9"; */
+"Qqp-Ee-QF9.text" = "Creation date";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "ZU2-ag-3Ni"; */
+"ZU2-ag-3Ni.title" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Login With TouchID"; ObjectID = "bTC-yh-7Cm"; */
+"bTC-yh-7Cm.normalTitle" = "Login With TouchID";
+
+/* Class = "UINavigationItem"; title = "Article"; ObjectID = "oei-cD-fKW"; */
+"oei-cD-fKW.title" = "Article";
+
+/* Class = "UINavigationItem"; title = "Diary"; ObjectID = "ukE-4Z-Np8"; */
+"ukE-4Z-Np8.title" = "Diary";

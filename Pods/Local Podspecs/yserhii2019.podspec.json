@@ -1,0 +1,28 @@
+{
+  "name": "yserhii2019",
+  "version": "0.1.0",
+  "summary": "My CoreData",
+  "description": "TODO: In this description will be many funny func.",
+  "homepage": "https://github.com/Yserhii",
+  "swift_versions": "5.0",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Yserhii": "semik93@bk.ru"
+  },
+  "source": {
+    "git": "https://github.com/Yserhii/yserhii2019.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.2"
+  },
+  "source_files": "yserhii2019/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "CoreData"
+  ],
+  "swift_version": "5.0"
+}
