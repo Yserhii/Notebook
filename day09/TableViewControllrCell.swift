@@ -9,7 +9,7 @@
 import UIKit
 import yserhii2019
 
-class ArticleTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ArticleTableViewController: UIViewController {
     
     var articles: [Article]?
     var langue: String = "en"
@@ -20,15 +20,6 @@ class ArticleTableViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     @IBOutlet weak var tableView: UITableView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        langue = Locale.current.languageCode!
-        articles = articleManager.getArticles(withLang: langue)
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
-    }
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
@@ -46,6 +37,44 @@ class ArticleTableViewController: UIViewController, UITableViewDataSource, UITab
    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let evc = segue.destination as? addViewController {
+            if (segue.identifier == "addSegue" && sender != nil) {
+                evc.edit = true
+                evc.article = sender as? Article
+                evc.articleManager = self.articleManager
+            }
+            if (segue.identifier == "addSegue") {
+                evc.articleManager = self.articleManager
+            }
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        langue = Locale.current.languageCode!
+        articles = articleManager.getArticles(withLang: langue)
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+}
+
+extension ArticleTableViewController {
+    
+    func format_date(date: NSDate) -> String  {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let myString = formatter.string(from: date as Date)
+        let yourDate = formatter.date(from: myString)
+        formatter.dateFormat = "dd-MMM-yyyy"
+        let myStringafd = formatter.string(from: yourDate!)
+        return (myStringafd)
+    }
+}
+
+extension ArticleTableViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (articles?.count)!
@@ -65,39 +94,15 @@ class ArticleTableViewController: UIViewController, UITableViewDataSource, UITab
             if cell.createDate.text == cell.modifDate.text! {
                 cell.modifDate.isHidden = false
             }
-                cell.img.image = (currentArticle.image != nil) ? UIImage(data: currentArticle.image! as Data) : nil
-                cell.content.text = currentArticle.content
+            cell.img.image = (currentArticle.image != nil) ? UIImage(data: currentArticle.image! as Data) : nil
+            cell.content.text = currentArticle.content
         }
         return cell
     }
     
-    func format_date(date: NSDate) -> String  {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        let myString = formatter.string(from: date as Date)
-        let yourDate = formatter.date(from: myString)
-        formatter.dateFormat = "dd-MMM-yyyy"
-        let myStringafd = formatter.string(from: yourDate!)
-        return (myStringafd)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let evc = segue.destination as? addViewController {
-            if (segue.identifier == "addSegue" && sender != nil) {
-                evc.edit = true
-                evc.article = sender as? Article
-                evc.articleManager = self.articleManager
-            }
-            if (segue.identifier == "addSegue") {
-                evc.articleManager = self.articleManager
-            }
-        }
-    }
-    
-   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "addSegue", sender: articles![indexPath.row])
     }
-    
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {

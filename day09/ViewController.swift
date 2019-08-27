@@ -22,13 +22,11 @@ class ViewController: UIViewController {
         var error: NSError?
         if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
             let reason = "Authenticate with Touch ID"
-            context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason, reply:
-                {(succes, error) in
+            context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason, reply: {(succes, error) in
                     if succes {
-                        DispatchQueue.main.async {
-                            self.performSegue(withIdentifier: "loginSegue", sender: nil)
-                        }
-                        
+                            DispatchQueue.main.async {
+                                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                            }
                     } else {
                         switch (error as? LAError)?.code {
                             case LAError.authenticationFailed:
@@ -37,12 +35,11 @@ class ViewController: UIViewController {
                             case LAError.userCancel:
                                 print("")
                             default:
-                                self.authenticateUser()
+                             self.authenticateUser()
                         }
                     }
             })
-        }
-        else {
+        } else {
             authenticateUser()
         }
     }
@@ -51,10 +48,7 @@ class ViewController: UIViewController {
         let context = LAContext()
 
         context.evaluatePolicy(LAPolicy.deviceOwnerAuthentication, localizedReason: "Please authenticate to proceed.") { [weak self] (success, error) in
-            
             guard success else {
-                DispatchQueue.main.async {
-                }
                 return
             }
             DispatchQueue.main.async {

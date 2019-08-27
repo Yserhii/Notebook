@@ -33,8 +33,7 @@ class addViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         if (UIImagePickerController.isSourceTypeAvailable(.photoLibrary)) {
             pickerController.sourceType = .photoLibrary
             present(pickerController, animated: true, completion: nil)
-        }
-        else {
+        } else {
             let alert = UIAlertController(title: "Alert", message: "No Library available", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
@@ -45,8 +44,7 @@ class addViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
             pickerController.sourceType = .camera
             present(pickerController, animated: true, completion: nil)
-        }
-        else {
+        } else {
             let alert = UIAlertController(title: "Alert", message: "No Camera available", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
